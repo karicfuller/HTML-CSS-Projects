@@ -1,0 +1,12 @@
+p {
+    color: black;
+    background-color: lightyellow;
+    font-size: x-large;
+    text-align: center;
+
+}
+
+h1 {
+    text-shadow: 2px 2px #FF0000;
+    text-align: center;
+}
