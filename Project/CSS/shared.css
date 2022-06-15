@@ -1,3 +1,5 @@
+/* Author: Kari Fuller*/
+
 html {
     font-family: sans-serif;
     font-size: 62.5%;
@@ -30,7 +32,7 @@ h1 {
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
-    color: #e91c1c;
+    color: black;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -165,7 +167,7 @@ section {
 .head-main {
     text-shadow: 2px 4px 5px rgba(0,0,0,0.9);
     font-variant: small-caps;
-    color: #fff;
+    color: red;
     letter-spacing: 5pt;
     word-spacing: 21pt;
     font-size: 4.5em;
@@ -173,7 +175,7 @@ section {
     font-family: impact, sans-serif;
     line-height: 2;
     font-weight: 900;
-    border: 5px double #fff;
+    border: 5px double black;
     padding: 10px;
 }
 
@@ -285,6 +287,11 @@ section {
     box-shadow: 0 0 18px rgba(100,65,0,.8);
 }
 
+.contact-us {
+    padding-left: 197px;
+    padding-top: 50px;
+}
+
 .form-spacer {
     padding: 30px 39px;
 }
@@ -303,8 +310,10 @@ section {
     float: right;
 }
 
+/* SATISFACTION GUARANTEED*/
+
 .terms:hover {
-    color: orange;
+    color: red;
     text-decoration: underline;
 }
 
@@ -324,6 +333,13 @@ section {
     border-radius: 7px;
     background-color: #797a7b;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+}
+
+/* HOVER OVER THE SUBMIT BUTTON COLOR*/
+
+.submit input[type="submit"]:hover {
+    color: black;
+    text-decoration: underline;
 }
 
 /*=================================================
