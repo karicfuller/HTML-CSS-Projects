@@ -1,34 +1,34 @@
+html {
+  font-family: sans-serif;
+}
+
 h1 {
     color: red;
     text-align: center;
-    font-family: tahoma;
 }
 
 h3 {
     color: red;
-    font-family: tahoma;
 }
 
 p {
-    font-family: tahoma;
     text-align: left;
     font-size: 14px;
+    text-indent: 25px;
 }
 
-footer {
-  font-family: tahoma;
+.footer {
+  padding-top: 2%;
 
 }
 
 ul {
-  font-family: tahoma;
   color: black;
   font-size: 16px;
 
 }
 
 form {
-  font-family: tahoma;
   font-size: 16px;
 
 }
@@ -38,4 +38,38 @@ form {
   margin-left: auto;
   margin-right: auto;
   
+}
+
+#vlad {
+  text-indent: 25px;
+
+}
+
+#vampires21 {
+  text-indent: 25px;
+}
+
+#vampire_entertain {
+  text-indent: 25px;
+}
+
+
+
+.contact-us {
+  text-indent: 25px;
+}
+
+
+.form-spacer {
+  padding: 30px 39px;
+}
+
+.container {
+  padding-top: 1%;
+
+}
+
+.contact {
+  margin-left: 1%;
+  margin-right: auto;
 }
