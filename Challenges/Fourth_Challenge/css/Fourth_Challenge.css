@@ -1,0 +1,19 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: red;
+    font-weight: bolder;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 40px;
+    left: 16px;
+}
+
+.top-left {
+    position: absolute;
+    bottom: 650px;
+    left: 16px;
+
+}
