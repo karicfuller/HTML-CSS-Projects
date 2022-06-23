@@ -1,0 +1,5 @@
+.tables, th, td {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px dashed black;
+    width: 50%;
+}
