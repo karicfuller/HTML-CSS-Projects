@@ -1,0 +1,26 @@
+.navbar {
+    overflow: hidden;
+    background-color: palevioletred;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: pink;
+    color: blueviolet;
+}
+
+.main {
+    margin-top: 50px;
+    font-weight: bolder;
+}
