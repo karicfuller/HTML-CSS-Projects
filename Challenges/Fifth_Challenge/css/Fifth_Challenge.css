@@ -23,4 +23,6 @@
 .main {
     margin-top: 50px;
     font-weight: bolder;
+    padding: 16px;
+    height: 1500px;
 }
