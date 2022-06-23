@@ -1,0 +1,26 @@
+h2 {
+    font-weight: bolder;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    height: 200px;
+    padding: 5%;
+    font-family: 'Courier New', Courier, monospace;    
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+p {
+    color: darkblue;
+    font-family: 'Courier New', Courier, monospace;
+}
