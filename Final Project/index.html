@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Kari Fuller</title>
+        <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="./videos/man_coding.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Kari Fuller's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>Tell me and I forget. Teach me and I remember. Involve me and I learn.</q> 
+                    
+                    <br>Benjamin Franklin
+                    <br>
+                    <br>Welcome to my portfolio website! Here you'll learn all about me and my career history.
+                    <br>
+                    <br> Hope you like it! 
+                </p>
+            </strong>
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="./images/googleit.png" alt="Googling and Blogs">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a Proactive Monitoring Engineer at <a href="https://www.salesforce.com/">Salesforce</a>. Salesforce is a company that makes cloud-based 
+                    software designed to help businesses connect with customers.
+                    <br>
+                    <br>I realized that in order to grow and promote within the company to achieve my career goals, I needed to know how to code.
+                    <br>I found <a href="https://www.learncodinganywhere.com/">The Tech Academy</a> and signed up for their Software Developer Bootcamp.
+                     I am learning HTML, CSS, JavaScript, SQL, C# and much more!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h2>GitHub</h2>
+                <p>
+                    <a href="https://learncodinganywhere.com">The Tech Academy</a> offers various types of Bootcamps such as: computer programming, 
+                    website development, cyber security and more. At The Tech Academy we have done mulitple projects for practicing and learning the basics of coding. 
+                    You can find my project examples <a href="https://github.com/karicfuller/HTML-CSS-Projects">here</a> on GitHub. Please keep in mind, 
+                    I have learned a great deal, and had no idea what I was doing on the projects in the beginning! ¯\_(ツ)_/¯ 
+                </p>   
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://iamkarifuller" target="_blank"><img src="./images/bored.jpeg" alt="Kari Being Bored"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="images/html_custom.png" alt="Contact_Image">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
