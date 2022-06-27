@@ -8,9 +8,16 @@ Space Station Project
 
 This project is named index.html. I customeized the Space Station project to a website for DWI USA which is a hommade hand soap company. I used HTML and images which were customized with CSS for both the HTML and image animation.
 
+
 Movie Theater Site
 
 For this project I created a homepage for a Movie Theater site. I used Bootstrap templates to create the site. It includes a navigation bar with links to various sections of the site, a jumbotron, drop downs, and form cards.  
+
+
+Portfolio
+
+My final portfolio which was my final project is a homepage that provides information about me and my career. 
+
 
 Various Projects
 
