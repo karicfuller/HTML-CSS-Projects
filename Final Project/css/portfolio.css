@@ -101,12 +101,15 @@ img:hover {
 
 /* The @media rule is used in media queries to apply different styles for different media/types of devices */
 /* On screens 576px and smaller the images will be 100px tall and centered vertically in the column */
+
+/* Removing to fix video
 @media screen and (max-width: 576px) {
     img {
         height: 100px;
         margin-top: 150px;
     }
 }
+*/
 
 /* Styling for footer element */
 footer {
@@ -155,12 +158,15 @@ footer {
 }
 
 /* Screens 576px and smaller will display navbar links equally distributed */
+/* Removing to fix video
 @media screen and (max-width: 576px) {
     .Navbar a{
-        width: 25%; /* This makes each link take up 1/4 of the navbar */
+        width: 25%; /* This makes each link take up 1/4 of the navbar 
         font-size: 12px;
     }
 }
+*/
+
 
 /* Navbar hover effects */
 .Navbar a:hover {
@@ -186,11 +192,13 @@ footer {
 }
 
 /* Screens that are 576px and smaller will not display the background video */
+/* trying without the media screen coding
 @media screen and (max-width: 576px) {
     #Typing_Video {
         display: none;
     }
 }
+*/
 
 /* Texts over the video */
 .Video_Text {
@@ -226,12 +234,13 @@ footer {
 
 
 /* Screens 576px and smaller will display a scroll bar if the text overflows the column height */
+/* Trying without the media screen setttings
 @media screen and (max-width: 576px) {
     .Column_1 {
         overflow: auto;
     }
 }
-
+*/
 .Column_2 {
     float: left;
     width: 50%;
