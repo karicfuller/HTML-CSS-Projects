@@ -2,9 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Dirty Work Inc. USA</title>
         <link rel="stylesheet" href="./css/shared.css">
         <link rel="stylesheet" href="./css/animations.css">
+        <link rel="stylesheet" href="./css/lightbox.css">
     </head>
     <body>
 
@@ -166,12 +168,166 @@
 
             <!-- END OF CONTAINER -->
     </div>
-</div>
-
-        
+</div>  
         </section>
 
             <!-- END GALLERY -->
+
+<!--START LIGHTBOX-->
+
+        <!--Images used to open the lightbox-->
+
+        <div class="row">
+            <div class="column">
+                <img src="./images/dwi/dwi_home.png" onclick="openModal();currentSlide(1)"
+        class="hover-shadow">
+            </div>
+        
+            <div class="column">
+                <img src="./images/dwi/dwi_2.png" onclick="openModal();currentSlide(2)"
+        class="hover-shadow">
+            </div>
+
+            <div class="column">
+                <img src="./images/dwi/dwi_9.png" onclick="openModal();currentSlide(3)"
+        class="hover-shadow">
+            </div>
+
+            <div class="column">
+                <img src="./images/dwi/dwi_beard.png" onclick="openModal();currentSlide(4)"
+        class="hover-shadow">
+            </div>
+
+            <div class="column">
+                <img src="./images/dwi/dwi_5.png" onclick="openModal();currentSlide(5)"
+        class="hover-shadow">
+            </div>
+
+            <div class="column">
+                <img src="./images/dwi/dwi_oscar.png" onclick="openModal();currentSlide(6)"
+        class="hover-shadow">
+            </div>
+
+            <div class="column">
+                <img src="./images/dwi/dwi_7.png" onclick="openModal();currentSlide(7)"
+        class="hover-shadow">
+            </div>
+
+            <div class="column">
+                <img src="./images/dwi/dwi_8.png" onclick="openModal();currentSlide(8)"
+        class="hover-shadow">
+            </div>
+
+            <div class="column">
+                <img src="./images/dwi/dwi_lipbalm.png" onclick="openModal();currentSlide(9)"
+        class="hover-shadow">
+            </div>
+
+        <!--The Modal/Lightbox-->
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 9</div>
+                    <img src="./images/dwi/dwi_home.png" style="width: 100%;">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 9</div>
+                    <img src="./images/dwi/dwi_2.png" style="width: 100%;">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 9</div>
+                    <img src="./images/dwi/dwi_9.png" style="width: 100%;">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 9</div>
+                    <img src="./images/dwi/dwi_beard.png" style="width: 100%;">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 9</div>
+                    <img src="./images/dwi/dwi_5.png" style="width: 100%;">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 9</div>
+                    <img src="./images/dwi/wi_oscar.png" style="width: 100%;">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 9</div>
+                    <img src="./images/dwi/dwi_7.png" style="width: 100%;">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 9</div>
+                    <img src="./images/dwi/dwi_8.png" style="width: 100%;">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">8 / 9</div>
+                    <img src="./images/dwi/dwi_8.png" style="width: 100%;">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">9 / 9</div>
+                    <img src="./images/dwi/dwi_lipbalm.png" style="width: 100%;">
+                </div>
+
+                <!--Next/previous controls-->
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+                <!--Caption Text-->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!--Thumbnail image controls-->
+                <div class="column">
+                    <img class="demo" src="./images/dwi/dwi_home.png" onclick="currentSlide(1)" alt="Soaps">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="./images/dwi/dwi_2.png" onclick="currentSlide(2)" alt="DWI Booth">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="./images/dwi/dwi_home.png" onclick="currentSlide(3)" alt="Logo While Making">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="./images/dwi/dwi_beard.png" onclick="currentSlide(3)" alt="DWI Beard Balm">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="./images/dwi/dwi_5.png" onclick="currentSlide(3)" alt="Wrapped Up Soap">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="./images/dwi/dwi_oscar.png" onclick="currentSlide(3)" alt="Owner">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="./images/dwi/dwi_7.png" onclick="currentSlide(3)" alt="Soaps">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="./images/dwi/dwi_8.png" onclick="currentSlide(3)" alt="Holiday Gift Box">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="./images/dwi/dwi_lipbalm.png" onclick="currentSlide(3)" alt="DWI Lip Balm">
+                </div>
+            </div>
+        </div>
+    
+        <!--End of Lightbox-->
+
 
         <!-- CONTACT US -->
          
