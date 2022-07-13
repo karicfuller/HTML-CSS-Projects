@@ -4,7 +4,7 @@ function openModal() {
 }
 
 //close the Modal
-function closeModal () {
+function closeModal() {
     document.getElementById("myModal").style.display = "none";
 }
 
@@ -18,7 +18,7 @@ function plusSlides(n) {
 
 //thumbnail image controls
 function currentSlide(n) {
-    slowSlides(slideIndex = n);
+    showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
