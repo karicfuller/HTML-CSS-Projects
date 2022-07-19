@@ -17,9 +17,11 @@
         <!--Navbar-->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
-            <a href="#Contact">Contact</a>
+        <!--Onclick and ondblclick functions added to open and close the contact form-->
+            <a onclick="openForm()" ondblclick="closeForm" class="contact">Contact</a>
         </div>
 
         <!--Breaks inserted to add space between navbar and the first heading-->
@@ -49,6 +51,46 @@
                     <br> Hope you like it! 
                 </p>
             </strong>
+        </div>
+
+        <!--Slideshow Section-->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!--Slide 1 of 4-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/sf_me.jpeg" alt="Kari with Salesforce Jacket">
+                        <div class="text">Prepared for Anything & Everything</div>
+                    </div>
+                    <!--Slide 2 of 4-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/html.jpeg" alt="HTML logo">
+                        <div class="text">Trained on HTML</div>
+                    </div>
+                    <!--Slide 3 of 4-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/css.jpeg" alt="CSS logo">
+                        <div class="text">Proficient with CSS</div>
+                    </div>
+                    <!--Slide 4 of 4-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/js.jpeg" alt="JavaScript logo">
+                        <div class="text">Experience with JavaScript</div>
+                    </div>
+                    <!--Previous and Next buttons-->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)"&#10095;></a>
+                </div>
+                <br> <!--Add a space between the slideshow images and the dots-->
+
+                <!--Slideshow navigation dots-->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
         </div>
 
         <!--About section-->
