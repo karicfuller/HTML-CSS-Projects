@@ -103,10 +103,10 @@
             <div class="Column_1">
                 <h1>About</h1>
                 <p>
-                    I am a Proactive Monitoring Engineer for the Marketing Cloud at <a href="https://www.salesforce.com/">Salesforce</a>. Salesforce is a company that makes cloud-based 
-                    software designed to help businesses connect with customers. I provide support for all types of technical issues.
+                    I am a Proactive Monitoring Engineer for the Marketing Cloud at <a href="https://www.salesforce.com/" target="_blank">Salesforce</a>. Salesforce is a company that makes cloud-based 
+                    software designed to help businesses connect with customers. I provide support for all types of technical issues to top tier customers.
                     <br>
-                    <br>I realized that in order to grow and promote within the company to achieve my career goals, I needed to know how to code.
+                    <br>I realized that in order to grow and promote within the company, and to achieve my career goals, I needed to know how to code.
                     <br>
                     <br>I found <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a> and signed up for their Software Developer Bootcamp.
                      I am learning HTML, CSS, JavaScript, SQL, C# and much more!</p>
@@ -122,8 +122,8 @@
                 <p>
                     <a href="https://learncodinganywhere.com" target="_blank">The Tech Academy</a> offers various types of Bootcamps such as: computer programming, 
                     website development, cyber security and more. At The Tech Academy we have done mulitple projects for practicing and learning the basics of coding. 
-                    You can find my project examples <a href="https://github.com/karicfuller/HTML-CSS-Projects" target="_blank">here</a> on GitHub. Please keep in mind, 
-                    I have learned a great deal, and had no idea what I was doing on the projects in the beginning! ¯\_(ツ)_/¯ 
+                    You can find my project examples <a href="https://github.com/karicfuller/HTML-CSS-Projects" target="_blank">here</a> on karicfullers's GitHub. 
+                    Please keep in mind, I have learned a great deal, and had no idea what I was doing on the projects in the beginning! ¯\_(ツ)_/¯ 
                 </p>   
             </div>
             <!--Right column-->
@@ -132,7 +132,34 @@
             </div>
         </div>
 
-        <!--Contact section-->
+        <!--Contact form-->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> 
+                    <!-- Above we are using a free online service from https://formspree.io/ to send our contact form to 
+                        an email address of our choosing - note: it will not run unless live on the internet, you have 
+                        to push it to your online website first -->
+                    <h1>Contact</h1>
+                    <label for="name">b>Name</label>/b></label>
+                      <input type="text" placeholder="Enter your first and last name here" name="name" required>
+                    <label for="phone">b>Phone Number</label>/b></label>
+                      <input type="text" placeholder="Enter your phone number here" name="phone" required>
+                    <label for="email">b>Email</label>/b></label>
+                      <input type="text" placeholder="Enter your email address here" name="email" required>
+                    <label for="message">b>Message</label>/b></label>
+                      <input type="text" placeholder="Type your message here" name="message">
+
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
+        </div>
+
+
+
+
+
         <div class="Row" id="Contact">
             <!--Contact image, left column-->
             <div class="Column_2 Column_tall">
