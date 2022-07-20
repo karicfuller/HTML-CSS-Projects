@@ -1,6 +1,6 @@
 // These functions open and close the contact form
 function openForm(){
-    document.getElementById("myForm").style.display = "block;"
+    document.getElementById("myForm").style.display = "block";
 }
 
 function closeForm() {
@@ -8,9 +8,8 @@ function closeForm() {
 }
 
 // This function displays the first image in the slideshow whe the page loads
-var slideIndex = 1; {
+var slideIndex = 1; 
 showSlides(slideIndex);
-}
 
 // This function changes the slide when the left or right arrows are clicked
 function plusSlides(n) {
@@ -18,7 +17,7 @@ function plusSlides(n) {
 }
 
 // This function changes the slide when the dots are clicked
-function currentSlide(n); {
+function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
@@ -34,11 +33,11 @@ function showSlides(n) {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none"; // this for loop takes each item in the array "slides" and sets the display to none
     }
-    for (i = 0 < dots.length; i++) {
+    for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", ""); // this for loop takes each item in the array "dots" and
         //removes "active" which removes the active styling
     }
-    slides[slideIndex - 1]style.display = "block"; // this displays the image in the slideshow
+    slides[slideIndex - 1].style.display = "block"; // this displays the image in the slideshow
     dots[slideIndex - 1].className += " active"; // this adds the active styling to the dot associated with the image
 }
 
