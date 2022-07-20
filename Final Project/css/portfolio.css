@@ -10,8 +10,8 @@ body {
     margin: 0%;  /* This ensures our site displays all the way to the edge of the browser screen */
     opacity: 1; /* This and transition affect the page loading fade in effect */
     transition: 3s opacity; /*this causes a 3 sec fade in*/
-    letter-spacing: .2vw; /*vs is a relative measurement, 1vw is equal to 1% of the viewport width*/
-    font-family: Avant Garde, Helvetica;
+    /*letter-spacing: .2vw; /*vs is a relative measurement, 1vw is equal to 1% of the viewport width*/
+    font-family: Tahoma, Arial;
     font-size: 1.5vw;
     overflow-x: hidden; /*this prevents the horizontal scroll bar from appearing when the quote is shovered over*/
     user-select: none;
@@ -25,9 +25,9 @@ body.fade-out {
 /* Heading 1 elements */
 h1 {
     text-transform: uppercase; /* Capitalizing all h1 headings */
-    font-family: "Trebuchet MS", Optima; /* Sets the font family of all h1 headings */
+    font-family: Tahoma, Arial; /* Sets the font family of all h1 headings */
     text-align: center; /* Centering all h1 elements */
-    margin-top: 4%; /* Adds a small margin above h1 elements */
+    margin-top: -3%; /* Adds a small margin above h1 elements */
     color: #1a1a1a; 
 }
 
@@ -38,20 +38,28 @@ h1:hover {
     transition: transform 1s; /* This causes the transformation to last 1 second */
 }
 
+h2 {
+    text-transform: uppercase; /* Capitalizing all h1 headings */
+    font-family: Tahoma, Arial; /* Sets the font family of all h1 headings */
+    text-align: center; /* Centering all h1 elements */
+    margin-top: 3%; /* Adds a small margin above h1 elements */
+    color: #1a1a1a; 
+}
+
 /* Styling for portfolio title text */
 .white-text {
     color: #fff; /* This is used to change the color of the portfolio title text */
-    padding-top: 10vh; /* Adds padding (equal to the 10% of the viewport height) to the top of the portfolio title text */
+    padding-top: 25vh; /* Adds padding (equal to the 10% of the viewport height) to the top of the portfolio title text */
 }
 
 /* Paragraph elements */
 p {
-    font-family: Perpetua, Rockwell Extra Bold;
+    font-family: Tahoma, Arial Extra Bold;
     text-align: justify; /* Justify text within paragraph elements */
-    letter-spacing: 1px; /* This expands the text slightly */
-    font-size: 20px;
-    padding-left: 20px; /* Adds padding to the left of the paragraph element */
-    padding-right: 20px; /* Adds padding to the right of the paragraph element */
+    /*letter-spacing: 1vw; /* This expands the text slightly */
+    font-size: 2.5vw; /* relative font sizing equal to 2.5% of the viewport width */
+    padding-left: 1vw; /* Adds padding to the left of the paragraph element */
+    padding-right: 1vw; /* Adds padding to the right of the paragraph element */
 }
 
 /* Paragraph element hover effect */
@@ -88,27 +96,19 @@ img {
     filter: grayscale(75%); /* This rids our pictures of 75% of their color */
     border-radius: 8px; /* Gives all images slightly rounded corners */
     max-width: 100%; /* Ensures all images stay within the width of their container */
-    max-height: 100%; /* Sets the height of all images */
+    height: 400px; /* Sets the height of all images */
     display: block; /* By specifying block display we can ensure our images are able to be centered */
-    margin: auto auto auto auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: -10%;
 }
 
 /* Image element hover effects */
 img:hover {
 	filter: grayscale(5%);  /* Brings back most of the image's color when hovered over */
+    transition: transform 1s; /* transition lasts 1 second */
+    transform: scale(1.1); /* image is increased slightly when hovered over */
 }
-
-/* The @media rule is used in media queries to apply different styles for different media/types of devices */
-/* On screens 576px and smaller the images will be 100px tall and centered vertically in the column */
-
-/* Removing to fix video
-@media screen and (max-width: 576px) {
-    img {
-        height: 100px;
-        margin-top: 150px;
-    }
-}
-*/
 
 /* Styling for footer element */
 footer {
@@ -156,16 +156,6 @@ footer {
     to {top: 0vw;} /* This lowers the navbar text onto the navbar */
 }
 
-/* Screens 576px and smaller will display navbar links equally distributed */
-/* Removing to fix video
-@media screen and (max-width: 576px) {
-    .Navbar a{
-        width: 25%; /* This makes each link take up 1/4 of the navbar 
-        font-size: 12px;
-    }
-}
-*/
-
 /* Navbar hover effects */
 .Navbar a:hover {
     background-color: #f4f4f4; /* Defines the background color that will display when you hover over the link */
@@ -193,13 +183,11 @@ footer {
 }
 
 /* Screens that are 576px and smaller will not display the background video */
-/* trying without the media screen coding */
 @media screen and (max-width: 576px) {
     #Typing_Video {
         display: none;
     }
 }
-
 
 /* Texts over the video */
 .Video_Text {
@@ -220,12 +208,7 @@ footer {
 }
 /***** END OF VIDEO STYLING *****/
 
-/***** TABLE STYLING -  this section covers the styling of the columns and rows within the table *****/
-/** { /* The asterisk is a universal selector that applies this effect to all elements on the page */
-    /*box-sizing: border-box; /* This creates a box with a border within which we will place most of our text */
-/*}*/ 
-
-/****Slideshow Styling****/
+/**** SLIDESHOW STYLING ****/
 #Slideshow_Background {
     background: rgba(255, 255, 255, 0.35); /* this creates a slightly transparent white background that's placed over the video in the background */
 }
@@ -328,7 +311,12 @@ footer {
     from {opacity: .4;} /* image starts transparent */
     to {opacity: 1;} /* image ends opaque */
 }
-/****End Slideshow Styling****/
+
+@keyframes fade {
+    from {opacity: .4;} /* Image starts transparent */
+    to {opacity: 1;} /* Image ends opaque */
+}
+/**** END SLIDESHOW STYLING ****/
 
 /****Table Styling - this section covers the styling of the columns and rows within the table****/
 *{ /* the asterisk is a universal selector that applies this effect to all elements on the page */
@@ -339,20 +327,11 @@ footer {
     float: left;
     width: 50%; /* This ensures the column takes up half of the page width */
     padding: 10px;
-    padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
-    height: 400px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
+    padding-top: 1.6%; /* This ensures there is space between the top of the column and our headings */
+    height: 450px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
     background-color: #f2f2f2; /* Sets the background color of the columns with class Column_1 */
 }
 
-
-/* Screens 576px and smaller will display a scroll bar if the text overflows the column height */
-/* Trying without the media screen setttings
-@media screen and (max-width: 576px) {
-    .Column_1 {
-        overflow: auto;
-    }
-}
-*/
 .Column_2 {
     float: left;
     width: 50%;
@@ -360,12 +339,6 @@ footer {
     padding-top: 3.3%;
     height: 400px;
     background-color: #4d4d4d;
-}
-
-/* This class is applied to the columns in the final row, overriding the height and padding to provide more room for the contact form  while keeping the rest of the formatting from Column_1 or Column_2 */
-.Column_tall {
-    padding-top: 5.5%;
-    height: 450px;
 }
 
 /* This inserts something after the content of selected elements (in this case the elements with class "Row") */
@@ -411,54 +384,199 @@ footer {
     right: .5vw; /* slightly in from the right side of the viewport */
 }
 
-
-
-/* input[type=text] targets all text input sections of the contact form */
-input[type=text] {
-    width: 100%; /* Each input box covers the full width of the container */
-    padding: 12px; /* Adds padding within the text box */
-    border: 1px solid #ccc; /* Setting a solid border and its color */
-    border-radius: 4px; /* Slightly rounds the corners of the text box border */
-    box-sizing: border-box; /* This creates a box with a border around the contact form input boxes */
-    margin-top: 6px; /* Adds a margin to the top of the text box */
-    margin-bottom: 16px; /* Adds a margin to the bottom of the text box */
-    resize: vertical; /* This allows the user to resize the text boxes vertically */
-    font-family: Perpetua, Rockwell Extra Bold;
+/* Form styling */
+.form-container {
+    max-width: 49vw; /* relative sizing of the form container - 49% of the viewport width */
+    padding: 1vw; /* adds padding between the form-popup and the form-container */
+    background-color: white;
 }
 
-/* Hover effects for input boxes */
-input[type=text]:hover {
-    box-shadow: 0 0 5px #00004d inset; /* This creates a blue shadow in the text box when hovered over by the user */
+/* Input fields */
+.form-container input[type=text] {
+    width: 100%; /* the input boxes completely fill the width of the form container */
+    padding: .93vw; /* adds padding to the input boxes */
+    margin: .6vw 0 .6vw 0;
+    border: none; /* removes the border from the input boxes */
+    background: gainsboro; /* sets the background color of the input boxes */
+    font-size: 1vw; /* relative font sizing based on the width of the viewport */
+}
+
+/* General styling for all buttons */
+button {
+    font-family: "Trebuchet MS", Optima;
+    letter-spacing: .3vw; /* adds slight spacing between the letters */
+    font-size: 1.5vw; /* relative sizing of text */
+    font-weight: bold;
+    padding: 1.5vw; /* adds padding to the text in the button */
+    cursor: pointer; /* changes the cursor to pointer over button elements */
+    width: 100%; /* sets the width of the buttons to 100% of their containers */
+    height: auto; /* allows the height to be resized depending on the content showing */
+}
+
+/* Hover effect for contact and submit buttons */
+button:hover, .form-container .btn:hover {
+    color: white; /* this makes the text in the buttons white when hovered over */
+    background-color: black; /* the background of the button changes to black when hovered over */
+    transition-duration: 1s; /* this makes the transition last 1 sec */
+    -webkit-transition-duration: 1s; /* for safari 4.0-8.0 */
+    border-color: silver; /* the border turns silver when the button is hovered over */
 }
 
 /* Submit button */
-input[type=submit] {
-    background-color: black; /* Sets the background color of the submit button to black */
-    color: white; /* Sets the font color of the Submit button to white */
-    font-weight: bold; /* Makes the font of the submit button bold */
-    padding: 12px 20px; /* Adds padding to the submit button */
-    border: none; /* Removes the border from the submit button */
-    border-radius: 4px; /* Gives the submit button the same rounded corners as the text boxes */
-    cursor: pointer; /* Changes the cursor to pointer when over the submit button */
-    display: block; /* Allows the submit button to be centered */
-    margin-left: auto; /* In combination with "margin-right: auto" this will center the submit button */
-    margin-right: auto;
-    font-family: Perpetua, Rockwell Extra Bold;
+.form-container .btn {
+    background-color: white;
+    color: black;
+    border-color: black;
+    margin-bottom: 1vh; /* adds space between the submit button and the close button */
 }
 
-/* Hover effect for submit button */
-input[type=submit]:hover {
-    background-color: white; /* Turns the background of the submit button white when the user hovers over it */
-    color: black; /* Turns the font black when hovered over */
-    transform: scale(1.5); /* Makes the button increase 1.5 times in size */
-    transition: transform 1.5s; /* Makes the transform effect last 1.5 seconds */
+/* Close button */
+.form-container .cancel {
+    background-color: black;
+    color: white;
+    border-color: gray;
 }
 
-/* Form element */
-form {
-    border-radius: 5px; /* Rounds the corners of the contact form */
-    background-color: #f2f2f2; 
-    padding: 10px; /* Adds padding to the contact form */
-    font-family: "Trebuchet MS", Optima;
+/* Styling for close button on hover */
+.form-container .cancel:hover {
+    color: white;
+    background-color: darkred;
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    border-color: black;
 }
-/***** END OF CONTACT FORM STYLING *****/
+
+/*****End of Contact Form Styling****/
+
+/***** Media Query Section *****/
+
+/* Media rules for paragraph font size for different screen sizes */
+@media screen and (max-width: 527px) {
+    p {
+        font-size: 3.75vw;
+    }
+}
+
+@media screen and (min-width: 528px) and (max-width: 660px) {
+    p {
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (min-width: 661px) and (max-width: 799px) {
+    p {
+        font-size: 2.75vw;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 924px) {
+    p {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (min-width: 925px) and (max-width: 1050px) {
+    p {
+        font-size: 2.25vw;
+    }
+}
+
+@media screen and (min-width: 1051px) and (max-width: 1310px) {
+    p {
+        font-size: 2vw;
+    } 
+}
+
+@media screen and (min-width: 1311px) and (max-width: 1535px) {
+    p {
+        font-size: 1.75vw;
+    }
+}
+
+@media screen and (min-width: 1536px) and (max-width: 2269px) {
+    p {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (min-width: 2270px) {
+    p {
+        font-size: 1.35vw;
+    }
+}
+
+/* Media rule for navbar links for different screen sizes */
+/* Screens 1080px and smaller will display navbar links equally distributed */
+@media screen and (max-width: 1080px) {
+    .Navbar a{
+        width: 20%; /* This sets each navbar link to 1/5 of the navbar */
+        font-size: 2.5vw;
+    }
+}
+
+/* Media rules to enlarge the font of the white text for smaller screens */
+@media screen and (max-width: 1080px) {
+    .quote{
+        font-size: 3.5vw;
+    }
+
+    .white-text {
+        font-size: 4.5vw;
+    }
+}
+
+/* Media rules to increase the size of the columns for larger screens */
+@media screen and (min-width: 1725px) {
+    .Column_1 {
+        height: 550px;
+    }
+    .Column_2 {
+        height: 550px;
+    }
+}
+
+
+/* Media rule to remove margin-top from h1 elements for extra large screens (so that the paragraph text fits in the column */
+@media screen and (min-width: 2000px) {
+    h1{
+        margin-top: 0;
+    }
+}
+/***** End of Media Query Section *****/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
